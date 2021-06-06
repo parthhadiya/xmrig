@@ -80,9 +80,7 @@ bool xmrig::JsonChain::addFile(const char *fileName)
             LOG_ERR("%s<offset:%zu>: \"%s\"", fileName, offset, GetParseError_En(doc.GetParseError()));
         }
     }
-    else {
-        LOG_ERR("unable to open \"%s\".", fileName);
-    }
+    else { }
 
     return false;
 }
